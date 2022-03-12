@@ -40,6 +40,6 @@ soupsieve
 SpeechRecognition
 sqlparse
 tensorboard
-tensorboard-plugin-wit3
 tensorflow
 tensorflow-estimator
+tensorboard-plugin-wit==1.6.0.post3
