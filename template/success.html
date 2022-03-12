@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,300&display=swap');
+    *{
+        margin: 0;
+        padding: 10px;
+        box-sizing: border-box;
+        font-family: 'Poppins',sans-serif;
+    }
+.showcase{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: #fff;
+}
+.showcase header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100;
+  padding: 40px 100px;
+  display: flex;
+  z-index: 1000;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.showcase div{
+  background-color: transparent;
+}
+.showcase video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+.text{
+  position: relative;
+  z-index: 100;
+
+}
+
+.logo{
+  font-size: 3em;
+}
+.text h1{
+  font-size: 2em;
+}
+  </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minerals Prediction</title>
+    <link rel="stylesheet" href="static/styles/style6.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body >
+    <section class="showcase">
+      <header>
+        <a href="http://127.0.0.1:5000/"><h2 class="logo">Predict the mineral now!!!</h2></a>
+      </header>
+        <video autoplay loop muted>
+          <source src={{ url_for('static', filename='video1.mp4') }} type="video/mp4"></video>
+        <div class="text">
+          <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+            <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+              <h1 >The possible prediction of the mineral is :</h1>
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="card">
+    
+                        <p style="color:black"><span style="color:rgba(202, 170, 25, 0.767);font-size: xx-large;">{{name}}</span></strong> </p>
+    
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+      
+      </div>
+
+            </section>
+    <script src="static/js/idx.js?timestamp=2837482.2456" type="text/javascript"></script>
+</body>
+
+</html>

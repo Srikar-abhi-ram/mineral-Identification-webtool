@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,300&display=swap');
+    *{
+        margin: 0;
+        padding: 10px;
+        box-sizing: border-box;
+        font-family: 'Poppins',sans-serif;
+    }
+.showcase{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: #fff;
+}
+.showcase header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100;
+  padding: 40px 100px;
+  display: flex;
+  z-index: 1000;
+  align-items: center;
+  justify-content: space-between;
+}
+ 
+.showcase div{
+  background-color: transparent;
+}
+.showcase video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+.text{
+  position: relative;
+  z-index: 100;
+
+}
+
+.logo{
+  font-size: 3em;
+}
+.text h1{
+  font-size: 2em;
+}
+  </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minerals Prediction</title>
+    <link rel="stylesheet" href="static/styles/style6.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body >
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Predict the mineral now!!!</h2>
+      </header>
+        <video autoplay loop muted>
+          <source src={{ url_for('static', filename='video.mp4') }} type="video/mp4"></video>
+        <div class="text">
+          <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+            <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+              <h1 >Mineral Identification using deep learning algorithms.</h1>
+               <p class="leading-relaxed mt-4">Mineral detection and training is a broad, colorful, but ultimately inconclusive and challenging subject of computer vision. The suggested technique next detects the minerals and labels them with their relevant class labels using multiple photos from the image collection. Tensor Flow, Keras, and OpenCV are used to detect these minerals. Keras is a free and open-source Python interface for artificial neural networks. Keras is a Python library that connects to the TensorFlow library.</p>
+              </div>
+            <div class="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+                  <div class="row h-100 justify-content-center align-items-center">
+                          <form action="/success" method="post" enctype="multipart/form-data">
+                              <label for="file">Select a mineral image to predict:</label><br>
+                              <input type="file" id="file" name="file" accept="image/*" onchange="loadFile(event)"><br><br>
+                              <button type="submit" class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" onclick="myFunction()">Predict Now!</button>
+                           </form>
+                  </div>
+            </div>
+            </div>
+        </div>
+      
+      </div>
+
+            </section>
+    <script src="static/js/idx.js?timestamp=2837482.2456" type="text/javascript"></script>
+</body>
+
+</html>

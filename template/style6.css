@@ -1,0 +1,24 @@
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+   
+}
+
+.bgImg {
+    background-clip: url("video.mp4");
+    color: whitesmoke;
+}
+
+.card {
+    background-color: gainsboro;
+    width: 300px;
+    border: 15px solid rgba(131, 136, 163, 0.658);
+    padding: 50px;
+    margin: 20px;
+}
+
