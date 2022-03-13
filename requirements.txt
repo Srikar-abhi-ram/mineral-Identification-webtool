@@ -5,5 +5,5 @@ keras==2.7.0
 numpy==1.19.3
 opencv-python==4.5.5.64
 pandas==1.2.4
-sklearn
-tensorflow
+sklearn==0.0
+tensorflow==2.2.0
