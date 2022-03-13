@@ -2,7 +2,6 @@
 import glob
 import os
 from numpy.lib.type_check import imag
-from sklearn import tree
 import tensorflow 
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Convolution2D
