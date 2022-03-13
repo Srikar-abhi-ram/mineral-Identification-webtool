@@ -4,4 +4,3 @@ keras==2.8.0
 numpy==1.20
 opencv-python==4.5.5.64
 pandas==1.2.4
-tensorflow==2.8.0
