@@ -2,7 +2,7 @@ Flask==1.1.2
 gunicorn==20.1.0
 h5py
 keras==2.8.0
-numpy==1.19.3
+numpy==1.20
 opencv-python==4.5.5.64
 pandas==1.2.4
 sklearn==0.0
