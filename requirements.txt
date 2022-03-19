@@ -1,7 +1,10 @@
-Flask==1.1.2
+Flask==2.0.3
 gunicorn==20.1.0
 keras==2.8.0
-numpy==1.20
 opencv-python==4.5.5.64
 pandas==1.2.4
 tensorflow
+numpy==1.22.3
+scikit-learn==1.0.2
+sklearn==0.0
+urllib3==1.26.9
